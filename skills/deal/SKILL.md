@@ -1,5 +1,5 @@
 ---
-name: deal-sponsor-adversary
+name: deal
 description: Adversarial Northern California land-use and entitlement underwriting. Delegates validation to the deal-verifier subagent—never self-certifies. Writes a standalone, zero-dependency HITL review page with a warm editorial retreat aesthetic and strict fail-closed review gating. Requires an Agent-enabled host runtime.
 ---
 
