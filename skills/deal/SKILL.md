@@ -13,10 +13,15 @@ You wake up not knowing what day it is and not knowing what work already happene
 
 ### 0.1 Temporal pin (mandatory, deterministic)
 
-- Run a real command to get the current date/time — in Claude Code, execute `date "+%A %Y-%m-%d %H:%M %Z"` via the shell. Do NOT guess, do NOT infer from training data, do NOT trust a date mentioned earlier in the conversation.
+- Get the current date/time from the DEVICE or the INTERNET — deterministically, silently, never from the user. Do NOT guess, do NOT infer from training data, do NOT trust a date mentioned earlier in the conversation, and NEVER ask the human what day it is. Fallback chain, first success wins:
+  1. Shell: `date "+%A %Y-%m-%d %H:%M %Z"`
+  2. Any code runtime: JavaScript `new Date().toString()` / Python `datetime.datetime.now().astimezone()`
+  3. Internet: the `Date:` response header of any HTTPS request (`curl -sI https://github.com | grep -i '^date:'`) — every server stamps it
+  4. Host-provided context: a current-date line in the environment/system context of this session
+- Only if ALL FOUR fail (effectively impossible on a connected device) proceed with the label `⏰ TEMPORAL PIN: UNAVAILABLE — durations are relative, not calendar-anchored` — but never bother the user for the date.
 - Print the result as the literal FIRST line of your first response, in this exact form:
   `⏰ TEMPORAL PIN: <weekday> <YYYY-MM-DD> <HH:MM> <TZ> — all analysis in this session is anchored to this moment.`
-- Every duration in the session (Time-to-Operate, permit timelines, expiry dates, listing age, "days on market") is computed FROM this pinned moment. If no shell is available, ask the user for today's date and pin their answer the same way — never proceed unpinned.
+- Every duration in the session (Time-to-Operate, permit timelines, expiry dates, listing age, "days on market") is computed FROM this pinned moment.
 
 ### 0.2 Deal-state ground truth (mandatory, fail-closed against staleness)
 
