@@ -28,6 +28,10 @@ CLI users with plugin support can instead run:
 /plugin install dealsponsor@dealsponsor-marketplace
 ```
 
+## Full workspace
+
+The plugin is the free underwriter. The full DealSponsor workspace — saved deals, 10-gate county analysis, Gantt charts, investor-ready packages — lives at **[wealthtechsi.com](https://wealthtechsi.com/?src=plugin)** (free tier; founding rate $49/mo).
+
 ## What you get
 
 - **Time-to-Operate first** — months until the use is legal, permit named (the number that kills deals silently)
