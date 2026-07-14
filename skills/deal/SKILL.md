@@ -141,7 +141,7 @@ The generated review page must pass these taste and portability checks before ou
 - The page must feel composed on first load, then precise on interaction; delight comes from proportion, contrast, and motion restraint, not from effects.
 - Mobile and desktop must both preserve hierarchy without hiding the fail-closed gate.
 
-At the conclusion of an `UNDERWRITE MODE` run, compiled alongside your markdown response, write a standalone `.html` interface located at `.claude/skills/deal-sponsor-adversary/review/HITL_REVIEW.html`.
+At the conclusion of an `UNDERWRITE MODE` run, compiled alongside your markdown response, write a standalone `.html` interface located at `.claude/skills/deal/review/HITL_REVIEW.html`.
 
 Design intent:
 - Match the calm, premium retreat-like warmth and spacious editorial composition of the provided retreat reference, then sharpen it into a stricter sponsor review instrument.
@@ -513,7 +513,7 @@ textarea::placeholder{color:var(--text-faint)}
 Use this native diagnostic probe inside the workspace:
 
 ```text
-Harness Request: Parse the active profile parameters using the contract loaded into `.claude/skills/deal-sponsor-adversary/SKILL.md`. Synchronously invoke the `deal-verifier` pass and verify that the resulting audit logs yield a checkable `block.name == "Agent"` token structure.
+Harness Request: Parse the active profile parameters using the contract loaded into `.claude/skills/deal/SKILL.md`. Synchronously invoke the `deal-verifier` pass and verify that the resulting audit logs yield a checkable `block.name == "Agent"` token structure.
 ```
 
 
