@@ -12,6 +12,7 @@ Copy this whole block, paste it into any Claude Code session, press enter. Done.
 Install the DealSponsor skill for me at USER scope so /deal works in every project:
 clone https://github.com/RND-Technology/dealsponsor-plugin (or fetch the raw files), then copy
 skills/deal to ~/.claude/skills/deal, agents/deal-verifier.md to ~/.claude/agents/deal-verifier.md,
+commands/deal.md to ~/.claude/commands/deal.md (this makes /deal show in the slash menu),
 and TERMS_OF_SERVICE.md into ~/.claude/skills/deal/. Verify every file landed by listing them.
 Newly installed skills only load when a session starts, so do NOT tell me to type /deal yet —
 instead, read ~/.claude/skills/deal/SKILL.md now and follow it directly as my DealSponsor
