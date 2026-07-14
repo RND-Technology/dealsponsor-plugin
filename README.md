@@ -9,17 +9,18 @@ An AI skill that fights your deal before your money does. Paste a listing and wh
 Copy this whole block, paste it into any Claude Code session, press enter. Done.
 
 ```
-Install the DealSponsor skill from the public GitHub repo RND-Technology/dealsponsor-plugin:
+Install the DealSponsor skill for me at USER scope so /deal works in every project:
 clone https://github.com/RND-Technology/dealsponsor-plugin (or fetch the raw files), then copy
-skills/deal into this project's .claude/skills/deal, agents/deal-verifier.md into .claude/agents/,
-and TERMS_OF_SERVICE.md next to them. Verify every file landed by listing them. IMPORTANT: newly
-installed skills only load when a session starts, so do NOT tell me to type /deal in this session —
-instead, read .claude/skills/deal/SKILL.md now and follow it directly as my DealSponsor underwriter:
-run its Gate 0 (temporal pin + deal ledger), show the terms summary for acceptance, then intake.
-Also tell me: in my NEXT session in this folder, /deal will appear as a slash command.
+skills/deal to ~/.claude/skills/deal, agents/deal-verifier.md to ~/.claude/agents/deal-verifier.md,
+and TERMS_OF_SERVICE.md into ~/.claude/skills/deal/. Verify every file landed by listing them.
+Newly installed skills only load when a session starts, so do NOT tell me to type /deal yet —
+instead, read ~/.claude/skills/deal/SKILL.md now and follow it directly as my DealSponsor
+underwriter: run Gate 0 (temporal pin + deal ledger), show the terms summary, then intake.
+Finally tell me, in one line: "/deal is now installed — it appears as a slash command in every
+NEW session from now on."
 ```
 
-**Why this works every time:** the skill runs immediately in this session (Claude follows the file directly), and from your next session onward `/deal` is a real slash command — no restart confusion, no dead first run.
+**Why this works every time:** the skill runs immediately in this session (Claude follows the file directly), and because it installs to `~/.claude` (user scope, not one project folder), **`/deal` appears in every new session in every project** — restart Claude Code once and it's there for good.
 
 CLI users with plugin support can instead run:
 
