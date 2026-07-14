@@ -36,7 +36,7 @@ VERIFIER MATRIX
 |---|-------|-------------|--------|----------------|------|
 ...one row per claim...
 
-TIME CHECK: <earliest realistic month-count to legally operate the proposed use, with the permit path named, or UNKNOWN>
+TIME CHECK: <earliest realistic month-count to legally operate the proposed use, with the permit path named, or UNKNOWN — computed from the parent's ⏰ TEMPORAL PIN date, never from a guessed "today">
 LISTING-REALITY GAP: <each marketed representation vs. what records show: CONFIRMED / CONTRADICTED / UNPROVEN>
 COVERAGE: COMPLETE | PARTIAL (list what was not checked and why)
 VERDICT: <the maximum decision label the parent is permitted, per the Decision Gate Matrix: any | RENEGOTIATE/WALK AWAY | PAUSE FOR EVIDENCE>
