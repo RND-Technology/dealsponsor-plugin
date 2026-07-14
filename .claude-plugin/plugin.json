@@ -1,0 +1,21 @@
+{
+  "name": "dealsponsor",
+  "version": "0.1.0",
+  "description": "Deterministic, independently-verified land-use feasibility + tentative-mapping for highly-regulated CA. Turns a raw parcel into a legally-defensible conservation-cluster package: a comb frontage-lot engine bisection-solves each lot to an exact acreage, an INDEPENDENT verifier recomputes every area from geometry to block metric-gaming, and a firewall/posture gate guards the output. Concept exhibits only — a licensed PE/PLS produces the stamped, recordable map. Not legal, engineering, securities, or investment advice.",
+  "author": {
+    "name": "Jesse Niesen",
+    "url": "https://github.com/jesseniesen"
+  },
+  "keywords": [
+    "land-use",
+    "tentative-map",
+    "subdivision",
+    "feasibility",
+    "GIS",
+    "California",
+    "Nevada County",
+    "entitlement",
+    "conservation-cluster",
+    "sponsor"
+  ]
+}

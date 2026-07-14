@@ -1,0 +1,13 @@
+{
+  "name": "dealsponsor-marketplace",
+  "owner": {
+    "name": "Jesse Niesen"
+  },
+  "plugins": [
+    {
+      "name": "dealsponsor",
+      "source": "./",
+      "description": "Deterministic, independently-verified land-use feasibility + tentative-mapping for highly-regulated CA. Concept exhibits only; a licensed PE/PLS produces the stamped, recordable map."
+    }
+  ]
+}
